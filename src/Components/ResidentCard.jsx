@@ -21,15 +21,15 @@ useEffect(() => {
 }, []);
 
   return (
-    <article>
-<header>
+    <article className="border-radius: m-100">
+<header className="relative">
   <img src={residentInfo?.image} alt="" />
-<div className="flex items-center gap-2">
+<div className="flex items-center gap-2 absolute bottom-8 left-1/2 -translate-x-1/2 bg-black/50 text-white">
   <div className={`h-3 aspect-square rounded-full ${statusStyle[residentInfo?.status]}`}></div>
 <span>{residentInfo?.status}</span>
 </div>
 </header>
-<section>
+<section className>
   <h5>{residentInfo?.name}</h5>
   <ul>
     <li><span>Species</span>{residentInfo?.species}</li>

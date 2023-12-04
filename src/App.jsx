@@ -20,7 +20,8 @@ const [locationInfo, setLocationInfo] = useState(null)
   
 
 return (
-    <main>
+  
+  <main className="bg-lime-600">
   <Location  locationInfo={locationInfo} setLocationInfo={setLocationInfo}/>
   <ResidentList residents={locationInfo?.residents ?? []}/>
 </main>

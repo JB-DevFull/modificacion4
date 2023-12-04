@@ -4,7 +4,10 @@ import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <div >
+    <img src="/im3.png" alt="" />
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  </div>
 )
